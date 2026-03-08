@@ -40,7 +40,7 @@ project-folder/
 ├── db_class.py    # MySQL Abstraction Layer (OOP Class)
 └── README.md      # Documentation
 
-🗄️ Database Schema
+##🗄️ Database Schema
 
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -72,7 +72,7 @@ self.__user = "root"
 self.__password = "YOUR_PASSWORD"
 self.__database = "python"
 
-🖥️ Usage
+## 🖥️ Usage
 
 Execute the main script to launch the interactive menu:
 Bash
