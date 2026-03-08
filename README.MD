@@ -40,6 +40,8 @@ project-folder/
 ├── db_class.py    # MySQL Abstraction Layer (OOP Class)
 └── README.md      # Documentation
 
+
+
 ##🗄️ Database Schema
 
 CREATE TABLE users (
@@ -49,6 +51,9 @@ CREATE TABLE users (
     user_age INT,
     user_active TINYINT DEFAULT 1
 );
+
+
+
 
 Installation & Setup
 1. Clone the Repository
@@ -72,12 +77,18 @@ self.__user = "root"
 self.__password = "YOUR_PASSWORD"
 self.__database = "python"
 
+
+
+
 ## 🖥️ Usage
 
 Execute the main script to launch the interactive menu:
 Bash
 
 python main.py
+
+
+
 
 ## References
 
