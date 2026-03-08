@@ -1,7 +1,5 @@
 #User Management System (Python & MySQL)
 
-This repository features a robust, Object-Oriented (OOP) database management solution designed to bridge Python applications with MySQL. Unlike static query scripts, this project utilizes a dynamic MySQLDatabase class that automates SQL generation, allowing for scalable and clean backend operations.
-
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-Database-orange.svg?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -40,7 +38,7 @@ project-folder/
 ├── db_class.py    # MySQL Abstraction Layer (OOP Class)
 └── README.md      # Documentation
 
-
+---
 
 ##🗄️ Database Schema
 
@@ -52,8 +50,7 @@ CREATE TABLE users (
     user_active TINYINT DEFAULT 1
 );
 
-
-
+---
 
 Installation & Setup
 1. Clone the Repository
@@ -78,7 +75,7 @@ self.__password = "YOUR_PASSWORD"
 self.__database = "python"
 
 
-
+---
 
 ## 🖥️ Usage
 
