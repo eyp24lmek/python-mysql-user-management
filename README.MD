@@ -49,40 +49,6 @@ CREATE TABLE users (
 );
 
 
-## ⚙️ Installation & Setup
-
-### 1. Clone the Repository
-Download the project to your local machine using the following commands:
-
-```bash
-git clone [https://github.com/eyp24lmek/python-mysql-user-management.git](https://github.com/eyp24lmek/python-mysql-user-management.git)
-cd user-management-system
-```
-
-2. Install Dependencies
-
-Install the required library via terminal:
-```bash
-pip install mysql-connector-python
-```
-3. Configure Connection
-
-Open the db_class.py file and update your MySQL connection credentials to match your local environment:
-
-self.__host = "localhost"
-self.__user = "root"
-self.__password = "YOUR_PASSWORD"
-self.__database = "python"
-
-
-🖥️ Usage
-
-Execute the main script to launch the interactive menu:
-
-python main.py
-
-
-
 
 
 
