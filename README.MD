@@ -38,10 +38,10 @@ project-folder/
 ├── db_class.py    # MySQL Abstraction Layer (OOP Class)
 └── README.md      # Documentation
 ```
----
 
-##🗄️ Database Schema
 
+## 🗄️ Database Schema
+```text
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     user_name VARCHAR(50) NOT NULL,
@@ -50,9 +50,9 @@ CREATE TABLE users (
     user_active TINYINT DEFAULT 1
 );
 
----
+```
 
-Installation & Setup
+ Installation & Setup
 1. Clone the Repository
 Bash
 
@@ -75,7 +75,7 @@ self.__password = "YOUR_PASSWORD"
 self.__database = "python"
 
 
----
+
 
 ## 🖥️ Usage
 
