@@ -48,9 +48,7 @@ CREATE TABLE users (
     user_active TINYINT DEFAULT 1
 );
 
-
-
-
+```
 
 📚 References
 
