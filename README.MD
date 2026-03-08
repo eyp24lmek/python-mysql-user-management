@@ -6,22 +6,23 @@ It serves as a comprehensive example of a Command-Line Interface (CLI) applicati
 
 Features
 
-*Add new users to the database
+Add new users to the database
 
-*List active users
+List active users
 
-*Update user information
+Update user information
 
-*Soft delete users (using user_active flag)
+Soft delete users (using user_active flag)
 
-*Modular database class
+Modular database class
 
 MySQL integration using mysql-connector-python
 
+Simple CLI menu system
 
 Technologies Used
 
-Python 
+Python 3
 
 MySQL
 
@@ -66,12 +67,39 @@ self.__database = "python"
 
 Make sure the database exists in MySQL.
 
+Usage
 
+Run the program:
+
+python main.py
+
+You will see the following menu:
+
+--- Management System ---
+
+1. Add User
+2. List Users
+3. Update User
+4. Delete User
+5. Exit
+
+Select the desired operation and follow the prompts.
 
 Example Output
 ID    Name     Lastname    Age
 1     John     Doe         25
 2     Alice    Smith       30
+Future Improvements
+
+Add input validation
+
+Add error handling
+
+Implement logging
+
+Create a GUI interface (Tkinter / PyQt)
+
+REST API integration
 
 
 
