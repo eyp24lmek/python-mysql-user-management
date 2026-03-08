@@ -57,18 +57,17 @@ Download the project to your local machine using the following commands:
 ```bash
 git clone [https://github.com/eyp24lmek/python-mysql-user-management.git](https://github.com/eyp24lmek/python-mysql-user-management.git)
 cd user-management-system
+```
 
 2. Install Dependencies
 
 Install the required library via terminal:
-Bash
-
+```bash
 pip install mysql-connector-python
-
+```
 3. Configure Connection
 
 Open the db_class.py file and update your MySQL connection credentials to match your local environment:
-Python
 
 self.__host = "localhost"
 self.__user = "root"
@@ -76,19 +75,21 @@ self.__password = "YOUR_PASSWORD"
 self.__database = "python"
 
 
-
-## 🖥️ Usage
+🖥️ Usage
 
 Execute the main script to launch the interactive menu:
-Bash
 
 python main.py
 
 
 
 
-## References
 
-- Python Documentation
-- MySQL Connector/Python Documentation
--https://www.youtube.com/@fehmiuyarnet
+
+📚 References
+
+    Python Documentation
+
+    MySQL Connector/Python Documentation
+
+    Fehmi Uyar - YouTube
