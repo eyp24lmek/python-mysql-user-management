@@ -1,107 +1,83 @@
-User Management System (Python & MySQL)
+#User Management System (Python & MySQL)
 
 This repository features a robust, Object-Oriented (OOP) database management solution designed to bridge Python applications with MySQL. Unlike static query scripts, this project utilizes a dynamic MySQLDatabase class that automates SQL generation, allowing for scalable and clean backend operations.
 
-It serves as a comprehensive example of a Command-Line Interface (CLI) application managing real-time data flow with a focus on modularity and security.
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-orange.svg?style=for-the-badge&logo=mysql)](https://www.mysql.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-Features
+This repository features a **robust, Object-Oriented (OOP)** database management solution designed to bridge Python applications with MySQL. Unlike static query scripts, this project utilizes a **dynamic `MySQLDatabase` class** that automates SQL generation, allowing for scalable and clean backend operations.
 
-Add new users to the database
+---
 
-List active users
+## ✨ Features
 
-Update user information
+* **➕ User Creation:** Seamlessly add new users to the database.
+* **📋 Data Retrieval:** List all active users with formatted output.
+* **🔄 Dynamic Updates:** Update any user field using dictionary-based logic.
+* **🗑️ Soft Delete:** Safely deactivate users using the `user_active` flag (preserves data integrity).
+* **🛡️ Secure & Modular:** Built with a focus on modularity and SQL injection prevention.
 
-Soft delete users (using user_active flag)
+---
 
-Modular database class
+## 🛠️ Technologies Used
 
-MySQL integration using mysql-connector-python
+| Technology | Purpose |
+| :--- | :--- |
+| **Python 3** | Core application logic |
+| **MySQL** | Relational data storage |
+| **mysql-connector** | Database driver & connectivity |
 
-Simple CLI menu system
+---
 
-Technologies Used
+## 📂 Project Structure
 
-Python 3
 
-MySQL
 
-mysql-connector-python
-
-Project Structure
+```text
 project-folder/
-│
-├── main.py
-├── db_class.py
-└── README.md
+├── main.py        # CLI Interface & Application Logic
+├── db_class.py    # MySQL Abstraction Layer (OOP Class)
+└── README.md      # Documentation
 
-main.py → Command line user interface and application logic
-
-db_class.py → MySQL database class for database operations
-
-Database Schema
-
-Example users table structure:
+🗄️ Database Schema
 
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_name VARCHAR(50),
-    user_lastname VARCHAR(50),
+    user_name VARCHAR(50) NOT NULL,
+    user_lastname VARCHAR(50) NOT NULL,
     user_age INT,
     user_active TINYINT DEFAULT 1
 );
-Installation
-1. Clone the repository
-git clone https://github.com/yourusername/user-management-system.git
-cd user-management-system
-2. Install required package
-pip install mysql-connector-python
-3. Configure database connection
 
-Edit the database credentials in db_class.py:
+Installation & Setup
+1. Clone the Repository
+Bash
+
+git clone https://github.com/eyp24lmek/python-mysql-user-management.git
+cd user-management-system
+
+2. Install Dependencies
+Bash
+
+pip install mysql-connector-python
+
+3. Configure Connection
+
+Open db_class.py and update your credentials:
+Python
 
 self.__host = "localhost"
 self.__user = "root"
-self.__password = ""
+self.__password = "YOUR_PASSWORD"
 self.__database = "python"
 
-Make sure the database exists in MySQL.
+🖥️ Usage
 
-Usage
-
-Run the program:
+Execute the main script to launch the interactive menu:
+Bash
 
 python main.py
-
-You will see the following menu:
-
---- Management System ---
-
-1. Add User
-2. List Users
-3. Update User
-4. Delete User
-5. Exit
-
-Select the desired operation and follow the prompts.
-
-Example Output
-ID    Name     Lastname    Age
-1     John     Doe         25
-2     Alice    Smith       30
-Future Improvements
-
-Add input validation
-
-Add error handling
-
-Implement logging
-
-Create a GUI interface (Tkinter / PyQt)
-
-REST API integration
-
-
 
 ## References
 
