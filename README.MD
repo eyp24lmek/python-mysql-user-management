@@ -37,7 +37,7 @@ project-folder/
 ├── main.py        # CLI Interface & Application Logic
 ├── db_class.py    # MySQL Abstraction Layer (OOP Class)
 └── README.md      # Documentation
-
+```
 ---
 
 ##🗄️ Database Schema
