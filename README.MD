@@ -30,8 +30,6 @@ This repository features a **robust, Object-Oriented (OOP)** database management
 
 ## 📂 Project Structure
 
-
-
 ```text
 project-folder/
 ├── main.py        # CLI Interface & Application Logic
@@ -39,9 +37,9 @@ project-folder/
 └── README.md      # Documentation
 ```
 
-
 ## 🗄️ Database Schema
-```text
+
+```sql
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     user_name VARCHAR(50) NOT NULL,
@@ -50,30 +48,32 @@ CREATE TABLE users (
     user_active TINYINT DEFAULT 1
 );
 
-```
 
- Installation & Setup
-1. Clone the Repository
-Bash
+## ⚙️ Installation & Setup
 
-git clone https://github.com/eyp24lmek/python-mysql-user-management.git
+### 1. Clone the Repository
+Download the project to your local machine using the following commands:
+
+```bash
+git clone [https://github.com/eyp24lmek/python-mysql-user-management.git](https://github.com/eyp24lmek/python-mysql-user-management.git)
 cd user-management-system
 
 2. Install Dependencies
+
+Install the required library via terminal:
 Bash
 
 pip install mysql-connector-python
 
 3. Configure Connection
 
-Open db_class.py and update your credentials:
+Open the db_class.py file and update your MySQL connection credentials to match your local environment:
 Python
 
 self.__host = "localhost"
 self.__user = "root"
 self.__password = "YOUR_PASSWORD"
 self.__database = "python"
-
 
 
 
